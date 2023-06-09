@@ -393,10 +393,13 @@ header .container nav ul li:last-child a {
   }
   .hero .container .text p {
     width: 80%;
+    position: relative;
     transform: translateX(-50%)
   }
   .hero .container .text .search {
-    width: 80%
+     width: 80%;
+    position: relative;
+    transform: translateX(-50%)
   }
   .hero .container .text .search button {
     font-size: 12px;
