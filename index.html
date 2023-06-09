@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Files -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Template 6</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="" />
+        </div>
+        <nav>
+          <i class="fa fa-bars"></i>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="html/our-shop.html">Our Shop</a></li>
+            <li><a href="html/product-details.html">Product Details</a></li>
+            <li><a href="html/contact-us.html">Contact Us</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        const icon = document.querySelector("nav i.fa-bars");
+        const list = document.querySelector("nav ul");
+
+        icon.addEventListener("click", function () {
+          if (list.style.display === "none" || list.style.display === "") {
+            list.style.display = "flex";
+          } else {
+            list.style.display = "none";
+          }
+        });
+        // Get the header element
+        const header = document.querySelector("header");
+
+        // Add an event listener to the scroll event
+        window.addEventListener("scroll", () => {
+          // Check if the user has scrolled beyond a certain threshold (e.g., 100 pixels)
+          if (window.scrollY > 100) {
+            // Add a CSS class to the header element
+            header.classList.add("scrolled");
+          } else {
+            // Remove the CSS class from the header element
+            header.classList.remove("scrolled");
+          }
+        });
+      </script>
+    </header>
+    <!-- End Header -->
+    <!-- Start Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="top">
+          <div class="text">
+            <h2>Welcom To LUGX</h2>
+            <h1>Best Gaming Site Ever!</h1>
+            <p>
+              LUGX Gaming is free Bootstrap 5 HTML CSS website template for your
+              gaming websites. You can download and use this layout for
+              commercial purposes. Please tell your friends about TemplateMo.
+            </p>
+            <div class="search">
+              <input type="search" placeholder="Tye Something" />
+              <button>Search Now</button>
+            </div>
+          </div>
+          <div class="image">
+            <div class="box">
+              <h3>$22</h3>
+              <img src="../images/banner-image.jpg" alt="" />
+              <h2>-40%</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="cards">
+            <div class="card">
+              <div class="image">
+                <img src="../images/featured-01.png" alt="" />
+              </div>
+              <h2>Free Storage</h2>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/featured-02.png" alt="" />
+              </div>
+              <h2>User More</h2>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/featured-03.png" alt="" />
+              </div>
+              <h2>Reply Ready</h2>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../images/featured-04.png" alt="" />
+              </div>
+              <h2>Easy Layout</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <!-- Start Trending -->
+    <section class="trending">
+      <div class="container">
+        <h3 class="main-heading">Trending</h3>
+        <div class="heading">
+          <h2>Trending Games</h2>
+          <a href="our-shop.html">
+            <button>view all</button>
+          </a>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="image">
+              <img src="../images/trending-01.jpg" alt="" />
+              <div class="price">
+                <h4>
+                  <del>$20</del>
+                </h4>
+                <h3>$15</h3>
+              </div>
+            </div>
+            <div class="data">
+              <h4>Action</h4>
+              <div class="footer">
+                <h2>Assasin Creed</h2>
+                <div class="icon">
+                  <a href="product-details.html">
+                    <i class="fa fa-basket-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/trending-02.jpg" alt="" />
+              <div class="price">
+                <h3>$44</h3>
+              </div>
+            </div>
+            <div class="data">
+              <h4>Action</h4>
+              <div class="footer">
+                <h2>Assasin Creed</h2>
+                <div class="icon">
+                  <a href="product-details.html">
+                    <i class="fa fa-basket-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/trending-03.jpg" alt="" />
+              <div class="price">
+                <h4>
+                  <del>$64</del>
+                </h4>
+                <h3>$44</h3>
+              </div>
+            </div>
+            <div class="data">
+              <h4>Action</h4>
+              <div class="footer">
+                <h2>Assasin Creed</h2>
+                <div class="icon">
+                  <a href="product-details.html">
+                    <i class="fa fa-basket-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/trending-04.jpg" alt="" />
+              <div class="price">
+                <h3>$32</h3>
+              </div>
+            </div>
+            <div class="data">
+              <h4>Action</h4>
+              <div class="footer">
+                <h2>Assasin Creed</h2>
+                <div class="icon">
+                  <a href="product-details.html">
+                    <i class="fa fa-basket-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Trending -->
+    <!-- Start Most Played -->
+    <section class="most-played">
+      <div class="container">
+        <h3 class="main-heading">Top Games</h3>
+        <div class="heading">
+          <h2>Most Played</h2>
+          <a href="product-details.html">
+            <button>View All</button>
+          </a>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="image">
+              <img src="../images/top-game-01.jpg" alt="" />
+            </div>
+            <div class="data">
+              <h3>Adventure</h3>
+              <h2>Assasin Creed</h2>
+              <a href="product-details.html">
+                <button>Explore</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/top-game-02.jpg" alt="" />
+            </div>
+            <div class="data">
+              <h3>Adventure</h3>
+              <h2>Assasin Creed</h2>
+              <a href="product-details.html">
+                <button>Explore</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/top-game-03.jpg" alt="" />
+            </div>
+            <div class="data">
+              <h3>Adventure</h3>
+              <h2>Assasin Creed</h2>
+              <a href="product-details.html">
+                <button>Explore</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/top-game-04.jpg" alt="" />
+            </div>
+            <div class="data">
+              <h3>Adventure</h3>
+              <h2>Assasin Creed</h2>
+              <a href="product-details.html">
+                <button>Explore</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/top-game-05.jpg" alt="" />
+            </div>
+            <div class="data">
+              <h3>Adventure</h3>
+              <h2>Assasin Creed</h2>
+              <a href="product-details.html">
+                <button>Explore</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="../images/top-game-06.jpg" alt="" />
+            </div>
+            <div class="data">
+              <h3>Adventure</h3>
+              <h2>Assasin Creed</h2>
+              <a href="product-details.html">
+                <button>Explore</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Most Played -->
+    <!-- Start Categories -->
+    <section class="categories">
+      <div class="container">
+        <h3 class="main-heading">Categories</h3>
+        <div class="heading">
+          <h2>Top Categories</h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h2>Action</h2>
+            <div class="image">
+              <img src="../images/categories-01.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <h2>Action</h2>
+            <div class="image">
+              <img src="../images/categories-02.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <h2>Action</h2>
+            <div class="image">
+              <img src="../images/categories-03.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <h2>Action</h2>
+            <div class="image">
+              <img src="../images/categories-04.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <h2>Action</h2>
+            <div class="image">
+              <img src="../images/categories-05.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Categories -->
+    <!-- Start Box -->
+    <section class="image2">
+      <div class="container">
+        <div class="box2">
+          <div class="left">
+            <h3 class="sm-heading">our shop</h3>
+            <h1 class="big-heading">
+              Go Pre-Order Buy & Get Best
+              <span style="color: var(--main-color)">Prices</span> For You!
+            </h1>
+            <p>
+              Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor
+              incididunt.
+            </p>
+            <a href="our-shop.html">
+              <button>Shop Now</button>
+            </a>
+          </div>
+          <div class="right">
+            <h3 class="sm-heading">newsletter</h3>
+            <h1 class="big-heading">
+              Get Up To $100 Off Just Buy
+              <span style="color: var(--main-color)">Subscribe</span>
+              Newsletter!
+            </h1>
+            <input type="email" placeholder="Your Email" />
+            <button>subscribe now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Box -->
+    <!-- Start Footer -->
+    <footer>
+      <h2>Copyright © 2048 LUGX Gaming Company. All rights reserved.</h2>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

@@ -1,0 +1,522 @@
+/* Start Varaibles */
+:root {
+  --main-color: #0071f8;
+  --secondary-color: #ee626b;
+  --section-padding: 20px;
+}
+/* End Varaibles */
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-heading {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.heading h2 {
+  font-size: 40px;
+}
+
+.heading button {
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.heading button:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .main-heading {
+    text-align: center;
+  }
+  .heading {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .heading h2 {
+    text-align: center;
+  }
+  .cards:not(.hero .container .bottom .cards) .card {
+    width: fit-content;
+  }
+  .cards:not(.hero .container .bottom .cards) .card img {
+    width: fit-content;
+  }
+}
+
+/* End Global Rules */
+/* Start Header */
+.scrolled {
+  border-radius: 0px 0px 30px 30px;
+}
+
+header {
+  width: 100%;
+  padding: var(--section-padding);
+  height: fit-content;
+  background-color: var(--main-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  width: 30%;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+}
+
+header .container nav i {
+  font-size: 25px;
+  flex-basis: 10%;
+  color: white;
+  display: none;
+}
+
+header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 90%;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+header .container nav ul li .active {
+  background: rgb(255 255 255 / 10%);
+}
+header .container nav ul li a:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+header .container nav ul li:last-child a {
+  background-color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  header .container .logo img {
+    width: 120px;
+  }
+  header .container nav i {
+    display: block;
+  }
+  header .container nav ul {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background: var(--main-color);
+    padding: 10px 0;
+    z-index: 9;
+    display: none;
+  }
+  header .container nav ul li {
+    padding: 20px 0;
+  }
+  header .container nav ul li:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+  header .container nav ul li:last-child {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .container nav ul li a {
+    font-size: 22px;
+  }
+}
+/* End Header */
+/* Start Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/page-heading-bg.jpg);
+  background-size: cover;
+  padding: 100px var(--section-padding);
+  border-radius: 0px 0px 130px 130px;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.hero h3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+/* End Hero */
+/* Start Game */
+.game {
+  padding: var(--section-padding) var(--section-padding) 50px;
+  margin: 80px 0;
+  border-bottom: 1px solid #d7cec9;
+}
+
+.game .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.game .container .image {
+  flex-basis: 45%;
+}
+
+.game .container .image img {
+  width: 100%;
+}
+
+.game .container .text {
+  flex-basis: 45%;
+}
+
+.game .container .text h2 {
+  margin-bottom: 30px;
+}
+
+.game .container .text .price {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.game .container .text .price h4 {
+  color: #d7cec9;
+  font-weight: 600;
+}
+
+.game .container .text .price h3 {
+  color: var(--main-color);
+  font-size: 25px;
+}
+
+.game .container .text p {
+  line-height: 1.6;
+  color: #606060;
+  margin-bottom: 50px;
+}
+
+.game .container .add-to-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin-bottom: 50px;
+}
+
+.game .container .add-to-cart .number {
+  padding: 15px 35px;
+  background-color: #eeeeee;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.game .container .add-to-cart .number {
+  border: 5px solid #d3e0f3;
+}
+
+.game .container .add-to-cart .number h5 {
+  color: black;
+  font-weight: normal;
+  border: none;
+  outline: none;
+}
+
+.game .container .add-to-cart button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  text-transform: uppercase;
+}
+
+.game .container .add-to-cart button i {
+  margin-right: 10px;
+}
+
+.game .container .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.game .container .line h4:first-child {
+  color: #d7cec9;
+  font-weight: normal;
+  flex-basis: 35%;
+}
+
+.game .container .line h4:last-child {
+  font-size: 17px;
+  font-weight: normal;
+  color: var(--main-color);
+  flex-basis: 65%;
+}
+
+@media (max-width: 991px) {
+  .game .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .game .container > div {
+    width: 100%;
+  }
+  .game .container .text .price {
+    width: 100%;
+    justify-content: center;
+  }
+  .game .container .text .price h3 {
+    margin: 0 20px;
+  }
+  .game .container .text .add-to-cart {
+    justify-content: center;
+    width: 100%;
+  }
+  .game .container .text .add-to-cart button {
+    margin: 0 20px;
+  }
+  .game .container .text .line {
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .game .container .text .line h4 {
+    flex-basis: 35%;
+  }
+}
+/* End Game */
+/* Start Description */
+.description {
+  padding: calc(var(--section-padding) + 50px);
+  background-color: #eeeeee;
+  border-radius: 20px;
+  width: 95%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.description .container h2 {
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.description .container p {
+  line-height: 1.7;
+  margin: 40px 0;
+}
+/* End Description */
+/* Start Reviews */
+.reviews {
+  padding: calc(var(--section-padding) + 50px);
+  background-color: #eeeeee;
+  border-radius: 20px;
+  width: 95%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+.reviews .container h2 {
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.reviews .container p {
+  line-height: 1.7;
+  margin: 40px 0;
+}
+/* End Reviews */
+/* Start Categories */
+.categories {
+  padding: calc(var(--section-padding) + 100px) var(--section-padding);
+}
+
+.main-heading {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.heading h2 {
+  font-size: 40px;
+}
+
+.heading button {
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.heading button:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .main-heading {
+    text-align: center;
+  }
+  .heading {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .heading h2 {
+    text-align: center;
+  }
+  .cards:not(.hero .container .bottom .cards) .card {
+    width: fit-content;
+  }
+  .cards:not(.hero .container .bottom .cards) .card img {
+    width: fit-content;
+  }
+}
+
+.categories .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.categories .container .cards .card {
+  background-color: var(--main-color);
+  color: white;
+  position: relative;
+  border-radius: 20px;
+  width: 100% !important;
+}
+
+.categories .container .cards .card h2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin: 25px 0;
+}
+
+.categories .container .cards .card .image {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: -2%;
+}
+
+.categories .container .cards .card .image img {
+  width: 100% !important;
+  border-radius: 20px;
+}
+/* End Categories */
+/* Start Footer */
+footer {
+  margin-top: 150px;
+  text-align: center;
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  padding: 30px var(--section-padding) 100px var(--section-padding);
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  color: white;
+}
+
+footer h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 991px) {
+  footer {
+    margin-top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+/* End Footer */

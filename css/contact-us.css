@@ -1,0 +1,361 @@
+/* Start Varaibles */
+:root {
+  --main-color: #0071f8;
+  --secondary-color: #ee626b;
+  --section-padding: 20px;
+}
+/* End Varaibles */
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-heading {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.heading h2 {
+  font-size: 40px;
+}
+
+.heading button {
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.heading button:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .main-heading {
+    text-align: center;
+  }
+  .heading {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .heading h2 {
+    text-align: center;
+  }
+  .cards:not(.hero .container .bottom .cards) .card {
+    width: fit-content;
+  }
+  .cards:not(.hero .container .bottom .cards) .card img {
+    width: fit-content;
+  }
+}
+
+/* End Global Rules */
+/* Start Header */
+.scrolled {
+  border-radius: 0px 0px 30px 30px;
+}
+
+header {
+  width: 100%;
+  padding: var(--section-padding);
+  height: fit-content;
+  background-color: var(--main-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  width: 30%;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+}
+
+header .container nav i {
+  font-size: 25px;
+  flex-basis: 10%;
+  color: white;
+  display: none;
+}
+
+header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 90%;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+header .container nav ul li .active {
+  background: rgb(255 255 255 / 10%);
+}
+header .container nav ul li a:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+header .container nav ul li:last-child a {
+  background-color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  header .container .logo img {
+    width: 120px;
+  }
+  header .container nav i {
+    display: block;
+  }
+  header .container nav ul {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background: var(--main-color);
+    padding: 10px 0;
+    z-index: 9;
+    display: none;
+  }
+  header .container nav ul li {
+    padding: 20px 0;
+  }
+  header .container nav ul li:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+  header .container nav ul li:last-child {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .container nav ul li a {
+    font-size: 22px;
+  }
+}
+/* End Header */
+/* Start Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/page-heading-bg.jpg);
+  background-size: cover;
+  padding: 100px var(--section-padding);
+  border-radius: 0px 0px 130px 130px;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.hero h3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+/* End Hero */
+/* Start Box */
+.box {
+  padding: 150px var(--section-padding);
+}
+
+.box .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box .container .text {
+  padding: 50px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  flex-basis: 45%;
+}
+
+.box .container .text > h3 {
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.box .container .text > h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.box .container .text p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.box .container .data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.box .container .data h3:first-child {
+  font-size: 17px;
+}
+
+.box .container .data h3:last-child {
+  font-size: 15px;
+  color: #acaeb3;
+  font-weight: normal;
+}
+
+.box .container .form-map {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.box .container .form-map iframe {
+  border-radius: 20px;
+}
+
+.box .container .form-map form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box .container .form-map form input {
+  border: none;
+  outline-color: black;
+  background-color: #eeeeee;
+}
+
+.box .container .form-map form .line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .container .form-map form .line input {
+  flex-basis: 40%;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.box .container .form-map form > input {
+  height: 150px;
+  border-radius: 20px;
+  position: relative;
+  padding: 15px;
+  vertical-align: top;
+}
+
+.box .container .form-map form > input::placeholder {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+}
+
+.box .container .form-map form button {
+  width: 60%;
+  padding: 15px 25px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+@media (max-width: 991px) {
+  .box .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .box .container .text {
+    text-align: center;
+  }
+  .box .container .form-map {
+    width: 100%;
+  }
+  .box .container .form-map form input {
+    width: 100%;
+  }
+  .box .container .form-map form .line {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* End Box */
+/* Start Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  padding: 30px var(--section-padding) 100px var(--section-padding);
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  color: white;
+}
+
+footer h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 991px) {
+  footer {
+    margin-top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+/* End Footer */

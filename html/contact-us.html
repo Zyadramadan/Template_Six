@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Files -->
+    <link rel="stylesheet" href="../css/contact-us.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Template 6</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="" />
+        </div>
+        <nav>
+          <i class="fa fa-bars"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-shop.html">Our Shop</a></li>
+            <li><a href="product-details.html">Product Details</a></li>
+            <li><a href="contact-us.html" class="active">Contact Us</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        const icon = document.querySelector("nav i.fa-bars");
+        const list = document.querySelector("nav ul");
+
+        icon.addEventListener("click", function () {
+          if (list.style.display === "none" || list.style.display === "") {
+            list.style.display = "flex";
+          } else {
+            list.style.display = "none";
+          }
+        });
+        // Get the header element
+        const header = document.querySelector("header");
+
+        // Add an event listener to the scroll event
+        window.addEventListener("scroll", () => {
+          // Check if the user has scrolled beyond a certain threshold (e.g., 100 pixels)
+          if (window.scrollY > 100) {
+            // Add a CSS class to the header element
+            header.classList.add("scrolled");
+          } else {
+            // Remove the CSS class from the header element
+            header.classList.remove("scrolled");
+          }
+        });
+      </script>
+    </header>
+    <!-- End Header -->
+    <!-- Start Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>CONTACT US</h1>
+        <h3>Home > Contact Us</h3>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <!-- Start Box -->
+    <div class="box">
+      <div class="container">
+        <div class="text">
+          <h3>CONTACT US</h3>
+          <h2>Say Hello!</h2>
+          <p>
+            LUGX Gaming Template is based on the latest Bootstrap 5 CSS
+            framework. This template is provided by TemplateMo and it is
+            suitable for your gaming shop ecommerce websites. Feel free to use
+            this for any purpose. Thank you.
+          </p>
+          <div class="adress data">
+            <h3>Address</h3>
+            <h3>Sunny Isles Beach, FL 33160, United States</h3>
+          </div>
+          <div class="phone data">
+            <h3>Phone</h3>
+            <h3>+123 456 7890</h3>
+          </div>
+          <div class="email data">
+            <h3>Email</h3>
+            <h3>lugx@contact.com</h3>
+          </div>
+        </div>
+        <div class="form-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27283.939135883178!2d29.9898045!3d31.262472550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1686334459461!5m2!1sar!2seg"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form action="#">
+            <div class="f-line line">
+              <input type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Your Surname" />
+            </div>
+            <div class="s-line line">
+              <input type="email" placeholder="Your Email" />
+              <input type="text" placeholder="Your Subject" />
+            </div>
+            <input type="text" placeholder="Your Message" /><br />
+            <button>Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Box -->
+    <!-- Start Footer -->
+    <footer>
+      <h2>Copyright © 2048 LUGX Gaming Company. All rights reserved.</h2>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
