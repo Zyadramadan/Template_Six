@@ -406,6 +406,9 @@ header .container nav ul li:last-child a {
     flex-direction: column;
     gap: 15px;
   }
+  .hero .container .text .search inout {
+  padding: 25px 20px;
+  }
   .hero .container .text .search button {
     font-size: 12px;
   }
@@ -418,7 +421,7 @@ header .container nav ul li:last-child a {
   }
   .hero .container .image .box h3 {
   top: 5%;
-    left: 5%;
+    right: 5%;
   }
   .hero .container .bottom .card {
     flex-basis: 48%;
