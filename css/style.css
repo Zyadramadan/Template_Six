@@ -406,8 +406,8 @@ header .container nav ul li:last-child a {
     flex-direction: column;
     gap: 15px;
   }
-  .hero .container .text .search inout {
-  padding: 25px 20px;
+  .hero .container .text .search input {
+  padding: 15px 25px;
   }
   .hero .container .text .search button {
     font-size: 12px;
