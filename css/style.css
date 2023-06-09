@@ -410,11 +410,15 @@ header .container nav ul li:last-child a {
     font-size: 12px;
   }
   .hero .container .image .box h2 {
-    left: 13%;
-    bottom: 13%;
+    left: 5%;
+    bottom: 5%;
     width: 90px;
     height: 90px;
     font-size: 23px;
+  }
+  .hero .container .image .box h3 {
+  top: 5%;
+    left: 5%;
   }
   .hero .container .bottom .card {
     flex-basis: 48%;
