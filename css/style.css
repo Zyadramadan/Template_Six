@@ -735,6 +735,7 @@ header .container nav ul li:last-child a {
 }
 
 .image2 .container .box2 > div:last-child input {
+  max-width: 100%;
   border: none;
   outline: transparent;
   border-radius: 30px;
