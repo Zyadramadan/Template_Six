@@ -392,7 +392,7 @@ header .container nav ul li:last-child a {
     transform: translateX(-50%);
   }
   .hero .container .text p {
-    width: 100%;
+    width: 80%;
   }
   .hero .container .text .search button {
     font-size: 12px;
