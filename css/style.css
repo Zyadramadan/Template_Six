@@ -311,7 +311,7 @@ header .container nav ul li:last-child a {
 }
 
 .hero .image .box img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 20px;
 }
 
